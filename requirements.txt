@@ -1,0 +1,16 @@
+# DeepSteg v4 — Python dependencies
+# Install with: pip install -r requirements.txt
+#
+# Tested with Python 3.10 - 3.12 on Windows 11, Ubuntu 24.04, Kali Linux, Parrot OS.
+
+cryptography==42.0.8
+opencv-python==4.10.0.84
+numpy==1.26.4
+Pillow==10.3.0
+scikit-image==0.23.2
+matplotlib==3.9.0
+
+# Optional — enables real CRYSTALS-Kyber-1024 post-quantum KEM leg.
+# If not installed, the hybrid KEM automatically falls back to a second
+# independent X25519 exchange (see core/crypto_engine.py).
+# kyber-py
